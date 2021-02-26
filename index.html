@@ -19,14 +19,15 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
       <nav class="nav collapsible">
-        <a class="nav__brand" href="/"><img src="images/logo.svg" alt="" /></a>
+        <a aria-label="Moshified" class="nav__brand" href="/"
+          ><img src="images/logo.svg" alt=""
+        /></a>
         <svg class="icon icon--white nav__toggler">
           <use href="images/sprite.svg#menu"></use>
         </svg>
@@ -72,6 +73,7 @@
       </header>
       <div class="input-group">
         <input
+          aria-label="Domain"
           class="input"
           type="text"
           placeholder="Enter domain name here..."
@@ -373,10 +375,15 @@
         <div class="card testimonial">
           <div class="grid grid--1x2">
             <div class="testimonial__image">
-              <img
-                src="images/testimonial.jpg"
-                alt="A happy, smiling customer"
-              />
+              <picture data-aos="fade-up" data-aos-offset="200">
+                <source type="image/webp" srcset="images/testimonial.webp" />
+                <source type="image/png" srcset="images/testimonial.jpg" />
+                <img
+                  src="/images/testimonial.jpg"
+                  alt=""
+                  class="feature__image"
+                />
+              </picture>
               <span class="icon-container icon-container--accent">
                 <svg class="icon icon--white icon--small">
                   <use href="images/sprite.svg#quotes"></use>
