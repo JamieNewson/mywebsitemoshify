@@ -441,10 +441,11 @@ a {
 
 /* Quotes */
 .quote {
-  font-size: 3rem;
+  font-size: 2.4rem;
   font-style: italic;
   color: var(--color-body-darker);
   line-height: 1.3;
+  margin: 1rem;
 }
 
 .quote__text::before {
@@ -475,7 +476,7 @@ a {
 
 @media screen and (min-width: 1024px) {
   .quote {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .quote__author {
@@ -490,6 +491,7 @@ a {
 /* Grids */
 .grid {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
 }
 
 @media screen and (min-width: 768px) {
@@ -506,7 +508,7 @@ a {
 
 /* Testimonials */
 .testimonial {
-  padding: 3rem;
+  padding: 1rem;
 }
 
 .testimonial__image {
@@ -525,6 +527,9 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .testimonial {
+    padding: 3rem;
+  }
   .testimonial .quote,
   .testimonial .quote__author {
     font-size: 2.4rem;
