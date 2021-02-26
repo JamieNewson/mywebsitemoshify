@@ -424,7 +424,7 @@ a {
 /* Media */
 .media {
   display: flex;
-  margin-bottom: 4rem;
+  margin-bottom: 0;
 }
 
 .media__body {
